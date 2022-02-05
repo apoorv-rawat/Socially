@@ -1,0 +1,164 @@
+body {
+  box-sizing: border-box; }
+
+#home-container {
+  display: flex;
+  height: 100%; }
+  #home-container #feed-posts::-webkit-scrollbar {
+    display: none; }
+  #home-container #feed-posts {
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: scroll;
+    height: 100%;
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */ }
+    #home-container #feed-posts #new-post-form textarea {
+      background-color: #f8f4f4;
+      box-shadow: 1px 1px 10px -2px black;
+      border-radius: 30px;
+      padding: 20px;
+      background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%); }
+    #home-container #feed-posts #new-post-form input {
+      margin-left: 10px;
+      height: 30px;
+      width: 50px;
+      border: 1px solid #767676;
+      background-color: #f8f4f4;
+      border-radius: 15px;
+      transition-duration: 0.4s;
+      box-shadow: 1px 1px 10px -2px black;
+      background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%); }
+    #home-container #feed-posts #new-post-form input:hover {
+      box-shadow: none;
+      cursor: pointer; }
+
+#posts-list-container ul {
+  list-style: none;
+  margin: auto;
+  padding: 0; }
+
+#posts-list-container > ul > li {
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px -2px black;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%); }
+
+#posts-list-container > ul {
+  width: 65%; }
+  #posts-list-container > ul .post-comments-list {
+    margin-left: 30px; }
+
+#posts-list-container .post-header {
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center; }
+  #posts-list-container .post-header .delete-btn {
+    position: absolute;
+    right: 0; }
+    #posts-list-container .post-header .delete-btn .delete-post-button {
+      text-decoration: none;
+      color: inherit; }
+  #posts-list-container .post-header .post-username-span {
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-right: 10px; }
+  #posts-list-container .post-header .dateva {
+    font-size: 0.7rem;
+    margin-top: 3px; }
+
+#posts-list-container .custom-send-button {
+  background: none;
+  border-radius: 50%;
+  border: none;
+  transition-duration: 0.4s; }
+  #posts-list-container .custom-send-button i {
+    font-size: 1.4rem; }
+
+#posts-list-container .custom-send-button:hover {
+  background-color: #e7e7e7;
+  cursor: pointer; }
+
+#posts-list-container .comment-li {
+  margin: 10px 0px 10px 0px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 30px;
+  width: 200px;
+  background-color: #f8f4f4;
+  position: relative;
+  box-shadow: 1px 1px 10px -2px black; }
+  #posts-list-container .comment-li > span {
+    margin: 10px 0px 10px 0px; }
+  #posts-list-container .comment-li .comment-dt {
+    font-size: 0.7rem;
+    position: absolute;
+    right: 20px;
+    bottom: 10px; }
+  #posts-list-container .comment-li .comment-header {
+    justify-content: space-between; }
+    #posts-list-container .comment-li .comment-header .comment-username {
+      font-size: 0.7rem; }
+    #posts-list-container .comment-li .comment-header .del-comment-container {
+      margin-right: 5px; }
+  #posts-list-container .comment-li .comment-content-span {
+    display: block;
+    font-weight: 500; }
+
+#posts-list-container .new-comment-form {
+  margin: 0; }
+  #posts-list-container .new-comment-form input[type="text"] {
+    border-radius: 20px;
+    padding: 5px; }
+
+#posts-list-container .post-comments {
+  margin-left: 10px; }
+
+#user-friends {
+  box-sizing: border-box;
+  width: 30%;
+  padding: 10px;
+  background-color: #e0e0af;
+  box-shadow: -5px 0px 10px -2px #888888;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-image: url("/images/bg-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+  #user-friends h3 {
+    margin: 0;
+    text-align: center; }
+  #user-friends .curve-box {
+    padding: 20px;
+    margin-top: 30px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgba(224, 224, 175, 0.94);
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px -2px black;
+    width: 75%; }
+
+.disp-flex {
+  display: flex; }
+
+.align-center {
+  align-items: center; }
+
+.justify {
+  justify-content: center; }
+
+.help-border {
+  border: 1px solid red; }
+
+.help-border-2 {
+  border: 1px solid black; }
+
+.img-cir {
+  height: 40px;
+  border-radius: 50%; }

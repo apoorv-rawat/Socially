@@ -1,0 +1,32 @@
+<% if(locals.user) { %>
+    
+    <div id="user-chat-box" >
+
+        <div class="chat-box-header">
+            <i style="margin-right: 10px;" class="fas fa-window-minimize"></i> 
+            <i class="fas fa-times"></i>
+        </div>
+
+        <ul id="chat-messages-list">
+            
+            <!-- <li class="other-message">
+                <span>Other message</span>
+            </li>
+
+            <li class="self-message">
+                <span>Self message</span>
+            </li> -->
+
+        </ul>
+
+        <div id="chat-message-input-container">
+            <input id="chat-message-input" placeholder="Type message here" class="font-fix">
+            <!-- <button id="send-message">Send</button> -->
+            <span id="emoji-mic"><i class="far fa-smile"></i> <i class="fas fa-microphone"></i></span>
+        </div>
+
+    </div>
+
+<% } %>
+
+

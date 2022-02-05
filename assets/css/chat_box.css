@@ -1,0 +1,66 @@
+#user-chat-box {
+  position: fixed;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 30px;
+  height: 300px;
+  width: 20rem;
+  bottom: 0px;
+  right: 40px;
+  box-shadow: 1px 1px 10px -2px black; }
+  #user-chat-box .chat-box-header {
+    height: 30px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 10px;
+    background: linear-gradient(90deg, #1a1a6d 0%, #1a945b 100%);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    padding-right: 20px; }
+  #user-chat-box #chat-messages-list {
+    box-sizing: border-box;
+    list-style: none;
+    padding: 10px;
+    height: 75%;
+    margin: 0;
+    overflow: scroll; }
+    #user-chat-box #chat-messages-list .other-message {
+      text-align: left;
+      padding: 5px; }
+      #user-chat-box #chat-messages-list .other-message span {
+        background-color: #ffa0a0; }
+    #user-chat-box #chat-messages-list .other-message span, #user-chat-box #chat-messages-list .self-message span {
+      border-radius: 20px;
+      display: inline-block;
+      padding: 10px; }
+    #user-chat-box #chat-messages-list .self-message {
+      text-align: right;
+      padding: 5px; }
+      #user-chat-box #chat-messages-list .self-message span {
+        background-color: #a0dcff; }
+    #user-chat-box #chat-messages-list .alert {
+      font-size: 0.8rem; }
+      #user-chat-box #chat-messages-list .alert span {
+        background-color: #ccc5c5; }
+  #user-chat-box #chat-messages-list::-webkit-scrollbar {
+    display: none; }
+  #user-chat-box #chat-message-input-container {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid lightgrey; }
+    #user-chat-box #chat-message-input-container #chat-message-input {
+      border: 0;
+      width: 85%;
+      height: 100%; }
+    #user-chat-box #chat-message-input-container #chat-message-input:focus {
+      outline: none;
+      background-color: whitesmoke; }
+    #user-chat-box #chat-message-input-container #emoji-mic {
+      margin-right: 10px; }

@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    // background-color: #e2e6f9;
+
+    #layout-main {
+        // height: 83vh;
+        
+        // for bg anim
+        position: relative;
+        height: 83%;
+        // width: 95%;
+        // width: 100%;
+        margin: auto;
+        box-sizing: border-box;
+    }
+}
+
+// link fix
+.a-fix {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.font-fix {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.google-auth-box {
+    border: 1px solid black; 
+    padding: 10px;
+    transition-duration: 0.4s;
+}
+
+.google-auth-box:hover {
+    color: white;
+    background-color: gray;
+    border: 1px solid gray; 
+
+}
+
+.sign-in-container {
+    padding: 20px;
+    text-align: center;
+
+    form {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    form * {
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+
+    form input {
+        // border: none;
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        // border: 1px solid red;
+    }
+}
+
+.h-margin-fix {
+    margin: 0 0 0.67em 0;
+}

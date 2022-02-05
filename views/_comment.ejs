@@ -1,0 +1,41 @@
+<li class="comment-li" id="comment-<%= comment._id %>">
+
+        <small class="comment-dt">
+            <%= comment.createdAt.toLocaleDateString() %>
+        </small>
+    
+        <div class="comment-header disp-flex align-center">
+
+            <span class="comment-username">
+                <%= comment.user.name %>
+            </span>
+ 
+            
+            <% if(locals.user && locals.user.id == comment.user.id) { %>
+                <small class="del-comment-container">
+                    <a class="delete-comment-button a-fix" href="/comments/destroy/<%= comment.id %>">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </small>    
+            <% } %>
+
+        </div>
+    
+        <span class="comment-content-span">
+            <%= comment.content %>
+        </span>
+
+        <!-- data attribute -->
+        <!-- display the likes of this comment -->
+        <small>
+            <% if(locals.user) { %>
+                <a class="toggle-like-button a-fix" data-likes="<%= comment.likes.length %>" 
+                    href="/likes/toggle/?id=<%= comment._id %>&type=Comment">
+                    <%= comment.likes.length %> <i class="far fa-thumbs-up"></i>
+                </a>
+            <% } else { %>
+                <%= comment.likes.length %> Likes
+            <% } %>
+        </small>
+
+</li>

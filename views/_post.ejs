@@ -1,0 +1,76 @@
+<li id="post-<%= post._id %>">
+    <p class="post-header">
+
+        <% if(locals.user && locals.user.id == post.user.id) { %>
+        <small class="delete-btn">
+            <a class="delete-post-button" href="/posts/destroy/<%= post.id %>">
+                <i class="fas fa-trash"></i>
+            </a>
+        </small>
+        <% } %>
+
+        <% if(!post.user.avatar) { %>
+            <i style="font-size: 1.5rem;" class="fas fa-user"></i>
+        <% } else{ %>
+
+            <img src="<%= post.user.avatar %>" alt="<% post.user.name %>" width="40px" height="40px" style="border-radius: 50%;" >
+        <% } %>
+
+        <span class="post-username-span">
+            <%= post.user.name %>
+        </span>
+        
+        <span class="dateva"> <%= post.createdAt %></span>
+        
+        <p style="font-size: 1.5rem;">
+            <%= post.content %>
+        </p>
+
+    </p>
+    
+    <div class="action-div disp-flex align-center">
+
+        <small style="margin-top: 1px;">
+            <% if(locals.user) { %>
+                <a class="toggle-like-button a-fix" data-likes= "<%= post.likes.length %>" 
+                    href="/likes/toggle/?id=<%= post._id %>&type=Post">
+                    <%= post.likes.length %> <i class="far fa-thumbs-up"></i>
+                </a>
+            <% } else { %>
+                <%= post.likes.length %> <i class="far fa-thumbs-up"></i>
+            <% } %>
+        </small>
+
+        <div class="post-comments">
+
+            <% if(locals.user) {%>
+                <form action="/comments/create" class="new-comment-form disp-flex align-center" method="POST">
+                    
+                    <input type="text" name="content" class="help-border-2" 
+                        placeholder="Add a comment..." required>
+                    
+                    <input type="hidden" name="post" value="<%= post._id %>">
+                    
+                    <button class="custom-send-button" type="submit">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </form>
+            <% } %>
+        
+        </div>
+
+    </div>
+
+    <div class="post-comments-list">
+        <ul id="post-comments-<%= post._id %>">
+            
+            <% for(comment of post.comments) { %>
+                
+                <%- include('_comment') -%>
+
+            <% } %>
+        </ul>
+
+    </div>
+
+</li>

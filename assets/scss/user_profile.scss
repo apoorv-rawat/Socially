@@ -1,0 +1,76 @@
+body {
+    // background-color: rgb(235, 224, 232);
+    background: rgb(213,184,184);
+    background: radial-gradient(circle, rgba(213,184,184,1) 36%, rgba(209,181,181,1) 30%, rgba(235,224,232,1) 100%);
+
+    #user-profile-container {
+        box-sizing: border-box;
+        padding-top: 20px;
+
+        #user-info {
+            padding: 20px;
+            text-align: center;
+            width: 70%;
+            margin: auto;
+            position: relative;
+
+            img {
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            .warning-span {
+                display: block; 
+                width: 200px; 
+                height: 200px; 
+                margin: auto;
+            }
+        }
+
+        input,label {
+            margin: 10px;
+            border: 0;
+            // background-color: transparent
+            // display: block;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        input[type="submit"] {
+            cursor: pointer;
+        }
+        
+        .custom-file-upload {
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            margin: 0px 0px 20px 0px;
+        }
+
+        .edit-profile-btn {
+            position: absolute;
+            border: 0;
+            cursor: pointer;
+            background-color: transparent;
+            right: 30px;
+            top: 30px;
+
+            i {
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+   }
+

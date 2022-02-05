@@ -1,0 +1,23 @@
+<footer>
+    <div id="container-f">
+        <div id="dev-name">
+            Made with <i style="color: red;" class="fas fa-heart"></i> by Apoorv Rawat </i> 
+        </div>
+
+        <ul>
+            <li>
+                <a class="a-fix" href="/">Home</a>
+            </li>
+            
+            <li>
+                <% if(locals.user) { %>
+                    <a class="a-fix" href="/users/profile/<%= locals.user.id %>">My Profile</a>
+                
+                <% }else{ %>
+
+                    <a class="a-fix" href="/users/sign-in">Profile</a>
+                <% } %>
+            </li>
+        </ul>
+    </div>
+</footer>

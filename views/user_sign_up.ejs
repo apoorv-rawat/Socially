@@ -1,0 +1,22 @@
+
+
+<div class="sign-in-container">
+
+    <h1 class="h-margin-fix">Sign up</h1>
+
+    <form style="height: 300px;" action="/users/create" method="POST">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your Email" required>    
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+        <input type="submit" value="Sign Up">
+
+    </form>
+
+    <p>
+        <a class="a-fix google-auth-box" href="/users/auth/google">
+            <i class="fab fa-google"></i> Sign In/Sign Up With Google
+        </a>
+    </p>
+</div>
+

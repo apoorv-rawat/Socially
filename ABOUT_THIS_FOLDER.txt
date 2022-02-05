@@ -1,0 +1,10 @@
+Node modules removed
+npm install for getting all modules installed
+
+This folder contains final code for Socially before deployment.
+
+
+Always update this folder with newer code.
+
+6 December 2021
+Ap

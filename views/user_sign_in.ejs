@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/css/user_sign_in.css">
+
+<div class="sign-in-container">
+    <h1 class="h-margin-fix">Sign in</h1>
+
+    <form action="/users/create-session" method="POST">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Sign In">
+    </form>
+
+    <p>
+        <a class="a-fix google-auth-box" href="/users/auth/google">
+            <i class="fab fa-google"></i> Sign In/Sign Up With Google
+        </a>
+    </p>
+
+</div>

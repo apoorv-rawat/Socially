@@ -1,0 +1,46 @@
+body {
+  background: #d5b8b8;
+  background: radial-gradient(circle, #d5b8b8 36%, #d1b5b5 30%, #ebe0e8 100%); }
+  body #user-profile-container {
+    box-sizing: border-box;
+    padding-top: 20px; }
+    body #user-profile-container #user-info {
+      padding: 20px;
+      text-align: center;
+      width: 70%;
+      margin: auto;
+      position: relative; }
+      body #user-profile-container #user-info img {
+        object-fit: cover;
+        border-radius: 50%; }
+      body #user-profile-container #user-info .warning-span {
+        display: block;
+        width: 200px;
+        height: 200px;
+        margin: auto; }
+    body #user-profile-container input, body #user-profile-container label {
+      margin: 10px;
+      border: 0; }
+    body #user-profile-container input[type="file"] {
+      display: none; }
+    body #user-profile-container input[type="submit"] {
+      cursor: pointer; }
+    body #user-profile-container .custom-file-upload {
+      border: 1px solid #ccc;
+      display: inline-block;
+      padding: 6px 12px;
+      cursor: pointer; }
+    body #user-profile-container input {
+      padding: 5px;
+      border-radius: 10px; }
+    body #user-profile-container h1 {
+      margin: 0px 0px 20px 0px; }
+    body #user-profile-container .edit-profile-btn {
+      position: absolute;
+      border: 0;
+      cursor: pointer;
+      background-color: transparent;
+      right: 30px;
+      top: 30px; }
+      body #user-profile-container .edit-profile-btn i {
+        font-size: 1.5rem; }

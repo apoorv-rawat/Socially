@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: 'Nanum Gothic', sans-serif; }
+  body #layout-main {
+    position: relative;
+    height: 83%;
+    margin: auto;
+    box-sizing: border-box; }
+
+.a-fix {
+  text-decoration: none;
+  color: inherit; }
+
+.font-fix {
+  font-family: 'Nanum Gothic', sans-serif; }
+
+.google-auth-box {
+  border: 1px solid black;
+  padding: 10px;
+  transition-duration: 0.4s; }
+
+.google-auth-box:hover {
+  color: white;
+  background-color: gray;
+  border: 1px solid gray; }
+
+.sign-in-container {
+  padding: 20px;
+  text-align: center; }
+  .sign-in-container form {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+  .sign-in-container form * {
+    font-family: 'Nanum Gothic', sans-serif; }
+  .sign-in-container form input {
+    padding: 10px; }
+
+.h-margin-fix {
+  margin: 0 0 0.67em 0; }
